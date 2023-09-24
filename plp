@@ -1,0 +1,35 @@
+//function of adding two numbers
+double addTwo(double num1, double num2) {
+  return num1 + num2;
+}
+
+//function of subtracting two numbers
+double subtractTwo(double num1, double num2) {
+  return num1 - num2;
+}
+
+//function of multiplying two numbers
+double multiplyTwo(double num1, double num2) {
+  return num1 * num2;
+}
+
+//function of dividing two numbers
+double divideTwo(double num1, double num2) {
+  if (num2 == 0) {
+    throw ArgumentError("Cannot divide by zero");
+  }
+  return num1 / num2;
+}
+
+//stringlength function
+int stringLength(String inputString) {
+  return inputString.length;
+}
+
+//getfirstelement function
+dynamic getFirstElement(List<dynamic> inputList) {
+  if (inputList.isEmpty) {
+    throw ArgumentError("List is empty");
+  }
+  return inputList[0];
+}
